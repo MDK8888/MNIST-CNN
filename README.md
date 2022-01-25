@@ -1,10 +1,7 @@
 # MNIST-CNN
+This is my implementation of a Convolutional Neural Network(CNN), a Machine Learning Model which is used for image classification. The final classification accuracy was **94.71%**, compared to a Multilayer Perceptron which only reached a maximum classification accuracy of **80%**.
 ## Project Overview: 
-This is my implementation of a Convolutional Neural Network(CNN), a Machine Learning Model which is used for image classification and forms the foundation for Modern Computer
-Vision(CV). What sets CNNS apart from traditional Multilayer Perceptrons is their usage of Convolutional Filters. In inference, these filters contain different feature maps which
-we use to scan over the image: interpreting our image as a grid of pixels, we take the element-wise product of our feature map with a region of our image, and store it in a 
-product matrix. We then feed these product matrices element-wise into an Activation Function, and they are now ready for the next layer! We do this for all possible regions of our image and
-all of our filters, with each distinct filter having its corresponding product matrix.
+Convolutional Neural Networks(CNN) form the foundation for Modern Computer Vision(CV). What sets CNNS apart from traditional Multilayer Perceptrons is their usage of Convolutional Filters. In inference, these filters contain different feature map matrices which we use to scan over the image: interpreting our image as a matrix of pixels, we take the element-wise product of our feature map with a region of our image, and store the product in a product matrix-each number in this matrix represents a different element-wise product. We then feed these product matrices element-wise into an Activation Function, and they are now ready for the next layer! We do this for all possible regions of our image and all of our filters, with each distinct filter having its corresponding product matrix.
 
 See the below gif for a visualization of the scanning/multiplication process, where the feature map is in dark blue, the image is light blue, and the product matrix is white:
 ![alt text](https://miro.medium.com/max/1400/1*Fw-ehcNBR9byHtho-Rxbtw.gif)
